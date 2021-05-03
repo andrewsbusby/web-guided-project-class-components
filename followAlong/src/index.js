@@ -48,6 +48,9 @@ class App extends React.Component {
 
   toggleItem = (id) => {
     console.log("id: ", id);
+    this.setState({
+      
+    });
   }
 
   // Class methods to update state
