@@ -48,8 +48,9 @@ class App extends React.Component {
 
   toggleItem = (id) => {
     console.log("id: ", id);
+    const newGroceries = 
     this.setState({
-      
+      groceries: 
     });
   }
 
