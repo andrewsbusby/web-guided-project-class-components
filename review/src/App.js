@@ -7,7 +7,10 @@ const App = () => {
   return (
     <div>
       <h1>Hello {name}. Age is equal to {age}</h1>
-      <button>Change the State!</button>
+      <button onClick={()=>{
+        setName("Allison");
+        setAge(22);
+      }}>Change the State!</button>
     </div>
   );
 };
