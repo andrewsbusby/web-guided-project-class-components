@@ -5,7 +5,10 @@ const App = () => {
   const [age, setAge] = useState(33);
 
   return (
-    <h1>Hello {name}. Age is equal to {age}</h1>
+    <div>
+      <h1>Hello {name}. Age is equal to {age}</h1>
+      <button>Change the State!</button>
+    </div>
   );
 };
 
