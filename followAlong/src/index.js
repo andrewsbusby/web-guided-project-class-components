@@ -19,7 +19,7 @@ const groceries = [
   {
     name: 'Milk',
     id: 1235,
-    purchased: true
+    purchased: false
   },
   {
     name: 'Pizza Sauce',
