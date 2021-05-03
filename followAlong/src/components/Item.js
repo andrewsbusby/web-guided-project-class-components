@@ -11,7 +11,7 @@ const Item = props => {
     console.log("clicked ", item.name);
     setItem({
       ...item,
-      purchased: (item.purchased === true)?false:true
+      purchased: !item.purchased
     })
   }
 
