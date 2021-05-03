@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Person = (props)=>  {
-    return(<div>
-        <h1>Hello {props.name}. Age is {props.age}.</h1>
-        <h3>{props.name} is a fine name for a {props.age} year old.</h3>
-    </div>);
+// const Person = (props)=>  {
+//     return(<div>
+//         <h1>Hello {props.name}. Age is {props.age}.</h1>
+//         <h3>{props.name} is a fine name for a {props.age} year old.</h3>
+//     </div>);
+// }
+
+class Person extends React.Component {
+    
 }
 
 class App2 extends React.Component {
@@ -25,7 +29,7 @@ class App2 extends React.Component {
 
     render() {
         return(<div>
-            <Person name={name} age={age}/>
+            <Person name={this.state.name} age={this.state.age}/>
             <button onClick={this.handleClick}>Change the state</button>
         </div>);
     }
