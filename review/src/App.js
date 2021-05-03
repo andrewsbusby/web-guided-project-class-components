@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const App = () => {
-  const name = "Warren";
+  const [name, setName] = "Warren";
 
   return (
     <h1>Hello {name}.</h1>
