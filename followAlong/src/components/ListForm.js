@@ -2,7 +2,7 @@ import React from "react";
 
 class ListForm extends React.Component {
   // Constructor with state
-
+  
   handleChanges = e => {
     // update state with each keystroke
   };
