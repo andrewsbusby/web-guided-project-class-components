@@ -46,6 +46,10 @@ class App extends React.Component {
     }
   }
 
+  toggleItem = (id) => {
+    
+  }
+
   // Class methods to update state
   render() {
     return (
