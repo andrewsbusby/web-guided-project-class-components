@@ -17,13 +17,12 @@ class ListForm extends React.Component {
   };
 
   // class property to submit form
-  handleSubmit = () => {
+  handleSubmit = (e) => {
+    e.preventDefault();
     this.props.addItem(this.state.input);
   }
 
   render() {
-    console.log(this.state.input);
-
     return (
       <form onSubmit={this.handleSubmit}>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
