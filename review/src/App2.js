@@ -12,7 +12,11 @@ class App2 extends React.Component {
     render() {
         return(<div>
             <h1>Hello {this.state.name}. Age is {this.state.age}</h1>
-            <button>Change the state</button>
+            <button onClick={()=>{
+                this.setState({
+                    name: "Allison"
+                });
+            }}>Change the state</button>
         </div>);
     }
 }
