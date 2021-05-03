@@ -7,7 +7,7 @@ const GroceryList = props => {
   // const sortedList = props.groceries.sort((a, b) => a.purchased - b.purchased);
 
   const handleClick = ()=>{
-    
+    props.clearPurchased()
   }
 
   return (
