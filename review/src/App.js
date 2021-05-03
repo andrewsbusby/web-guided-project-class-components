@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
 const Person = (props) => {
-  console.log(props);
   return(<div>
-      <h1>Hello {props.name}. Age is equal to {age}.</h1>
-      <h3>You're {name}!?!? {name} is a fantastic name! Never change it!!</h3>
+      <h1>Hello {props.name}. Age is equal to {props.age}.</h1>
+      <h3>You're {props.name}!?!? {props.name} is a fantastic name! Never change it!!</h3>
   </div>);
 }
 
