@@ -39,7 +39,10 @@ const groceries = [
 ];
 
 class App extends React.Component {
-
+  constructor() {
+    super();
+    
+  }
   // Class methods to update state
   render() {
     return (
