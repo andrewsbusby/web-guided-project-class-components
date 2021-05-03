@@ -1,10 +1,8 @@
 import React from 'react';
 
 class App2 extends React.Component {
-    constructor() {
-
-    }
     
+
     render() {
         const name = "Allison";
 
