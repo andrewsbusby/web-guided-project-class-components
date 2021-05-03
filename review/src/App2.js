@@ -7,6 +7,7 @@ class App2 extends React.Component {
             name: "Warren",
             age: 33
         }
+        this.handleClick.bind(this);
     }
 
     handleClick = () => {
