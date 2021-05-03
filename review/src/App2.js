@@ -10,8 +10,8 @@ import React from 'react';
 class Person extends React.Component {
     render() {
         return(<div>
-            <h1>Hello {props.name}. Age is {props.age}.</h1>
-            <h3>{props.name} is a fine name for a {props.age} year old.</h3>
+            <h1>Hello {this.props.name}. Age is {this.props.age}.</h1>
+            <h3>{this.props.name} is a fine name for a {props.age} year old.</h3>
         </div>);   
     }
 }
