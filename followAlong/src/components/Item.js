@@ -8,7 +8,7 @@ const Item = props => {
   // });
 
   const handleClick = ()=> {
-    props.toggleItem(item.id);
+    props.toggleItem(props.item.id);
 
     // setItem({
     //   ...item,
@@ -17,7 +17,7 @@ const Item = props => {
   }
 
   return (
-    <div onClick={handleClick} className={`item${item.purchased ? ' purchased' : ''}`}>
+    <div onClick={handleClick} className={`item${props.item.purchased ? ' purchased' : ''}`}>
       <p>{props.item.name}</p>
     </div>
   );
