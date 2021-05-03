@@ -64,8 +64,9 @@ class App extends React.Component {
   }
 
   addItem = (title) => {
+    const newGroceries = [...this.state.groceries];
     this.setState({
-      groceries: 
+      groceries: newGroceries
     })
   }
 
