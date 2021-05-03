@@ -18,7 +18,11 @@ class App2 extends React.Component {
 
     render() {
         return(<div>
-            <h1>Hello {this.state.name}. Age is {this.state.age}.</h1>
+            <Person/>
+            <div>
+                <h1>Hello {this.state.name}. Age is {this.state.age}.</h1>
+                <h3>{this.state.name} is a fine name for a {this.state.age} year old.</h3>
+            </div>
             <button onClick={this.handleClick}>Change the state</button>
         </div>);
     }
