@@ -9,6 +9,9 @@ const Item = props => {
 
   const handleClick = ()=> {
     console.log("clicked ", item.name);
+    setItem({
+      ...item,
+    })
   }
 
   return (
