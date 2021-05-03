@@ -17,10 +17,10 @@ class ListForm extends React.Component {
   };
 
   // class property to submit form
-  handleSubmit = ()=> {
-
+  handleSubmit = () => {
+    
   }
-  
+
   render() {
     console.log(this.state.input);
 
