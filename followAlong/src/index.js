@@ -66,12 +66,12 @@ class App extends React.Component {
   addItem = (title) => {
     const newItem = {
       name:title,
-      id:this.groceries.length,
+      id:this.state.groceries.length,
       purchased: false
     }
 
     const newGroceries = [...this.state.groceries, newItem];
-    
+
     this.setState({
       groceries: newGroceries
     })
