@@ -18,7 +18,7 @@ const Item = props => {
 
   return (
     <div onClick={handleClick} className={`item${item.purchased ? ' purchased' : ''}`}>
-      <p>{item.name}</p>
+      <p>{props.item.name}</p>
     </div>
   );
 };
