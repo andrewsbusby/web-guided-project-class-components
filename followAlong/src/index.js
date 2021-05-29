@@ -47,6 +47,23 @@ class App extends React.Component {
     }
   }
 
+  toggleItem = (id) => {
+    console.log('id: ', id);
+    const newGroceries = this.state.groceries.map(item => {
+      if (item.id === id) {
+        return {
+          ...item,
+          purchased: !item.purchased
+        }
+      } else {
+        return (item);
+      }
+    });
+    this.setState({
+      groceries: newGroceries
+    });
+  }
+
   // Class methods to update state
   render() {
     return (
@@ -55,7 +72,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm />
          </div>
-        <GroceryList groceries={this.state.groceries} />
+        <GroceryList toggleItem={this.toggleItem} groceries={this.state.groceries} />
        </div>
     );
   }
