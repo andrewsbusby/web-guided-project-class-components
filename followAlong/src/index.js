@@ -43,7 +43,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      groceries:groceries
+      groceries: groceries
     }
   }
 
@@ -55,7 +55,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm />
          </div>
-        <GroceryList groceries={groceries} />
+        <GroceryList groceries={this.state.groceries} />
        </div>
     );
   }
