@@ -23,7 +23,7 @@ class ListForm extends React.Component {
 
   render() {
     return (
-      <form onsubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         {/* This is an uncontrolled component 😬 We want it to be controlled by state */}
         <input onChange={this.handleChanges} type="text" name="item" />
         <button>Add</button>

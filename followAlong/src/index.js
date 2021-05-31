@@ -76,6 +76,15 @@ class App extends React.Component {
       })
     }
 
+    clearPurchased = () => {
+      const newGroceries = this.state.groceries.filter(item => {
+        return(item.purchased === false);
+      });
+      this.setState({
+        groceries: newGroceries
+      })
+    }
+
   // Class methods to update state
   render() {
     return (
@@ -84,7 +93,7 @@ class App extends React.Component {
            <h1>Shopping List</h1>
            <ListForm addItem={this.addItem}/>
          </div>
-        <GroceryList toggleItem={this.toggleItem} groceries={this.state.groceries} />
+        <GroceryList clearPurchased={this.clearPurchased} toggleItem={this.toggleItem} groceries={this.state.groceries} />
        </div>
     );
   }
